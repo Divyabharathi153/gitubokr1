@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myokr</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body><center>
+  <div id="login-screen">
+    <h2>Login to Myokr</h2>
+    <input type="email" id="login-email" placeholder="Email"/>
+    <button id="login-btn">Login</button>
+  </div>
+   </center>
+  <div id="main-app" class="hidden">
+    <header><h1> Welcome Myokr Dashboard</h1> <button id="logout-btn">Logout</button></header>
+    <div id="okr-form">
+      <h3>Create / Edit OKR</h3>
+      <select id="team-select"></select>
+      <select id="user-select"></select>
+      <input type="text" id="okr-title" placeholder="Objective Title"/>
+      <textarea id="okr-kr" placeholder="Key Result(s)"></textarea>
+      <button id="okr-save-btn">Save OKR</button>
+    </div>
+
+    <div id="okr-list">
+      <h3>Existing OKRs</h3>
+      <ul id="okrs"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
